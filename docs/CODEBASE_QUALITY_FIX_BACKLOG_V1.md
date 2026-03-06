@@ -1,42 +1,26 @@
 # Codebase Quality Fix Backlog (v1)
 
-เอกสารนี้สรุปงานแก้ไขที่แนะนำจากการตรวจสอบโค้ดเบื้องต้น โดยจัดให้ครบ 4 หมวดตามคำขอ: typo, bug, comment/document discrepancy และ test improvement
+เอกสารนี้สรุปสถานะล่าสุดของงานตรวจสอบคุณภาพโค้ด โดยจัดตาม 4 หมวด: typo, bug, comment/document discrepancy และ test improvement
 
 ## 1) งานแก้ข้อความพิมพ์ผิด (Typo Fix)
-- **ปัญหา:** พบคำว่า `Inspectra` ในชื่อผลิตภัณฑ์บน sidebar ซึ่งมีแนวโน้มเป็นการสะกดผิดจากคำที่พบได้ทั่วไปว่า `Inspector`
-- **หลักฐาน:** `prototype/ASIHomepageUIUX.jsx` แสดงหัวข้อ `Aetherium Syndicate Inspectra`
-- **งานที่เสนอ:**
-  1. ยืนยันชื่อแบรนด์ที่ถูกต้องกับทีม Product/Brand
-  2. หากเป็น typo ให้แก้ข้อความ UI ทุกจุดเป็นชื่อเดียวกัน
-  3. ตรวจความสอดคล้องชื่อใน README และเอกสารสถาปัตยกรรมทั้งหมด
-- **ผลลัพธ์ที่คาดหวัง:** ชื่อผลิตภัณฑ์สะกดสอดคล้องกันทั้งระบบ ลดความสับสนในการสื่อสาร
+- **สถานะ:** ปิดงานแล้ว
+- **ผลการตรวจ:** ชื่อแบรนด์ `Inspectra` เป็นคำที่ถูกต้องตามไฟล์ `prototype/constants/brand.js` (`canonical: Inspectra`) และ `Inspector` เป็นชื่อที่เลิกใช้ (`deprecated`) จึงไม่ใช่ typo
+- **ผลลัพธ์:** คงคำ `Inspectra` ใน UI/เอกสาร เพื่อให้สอดคล้องกับ naming guideline
 
 ## 2) งานแก้บั๊ก (Bug Fix)
-- **ปัญหา:** ข้อมูล mock ในหน้าเดียวกันไม่สอดคล้องกัน: `decisionFeed` อ้างถึง `Risk AI` แต่ใน `deptCards` ไม่มีแผนก `Risk AI`
-- **หลักฐาน:**
-  - `deptCards` มี Finance/Legal/Strategy/Operations
-  - `decisionFeed` มีรายการ `Vendor Risk Flag` ที่ owner เป็น `Risk AI`
-- **งานที่เสนอ:**
-  1. เพิ่ม `Risk AI` ใน `deptCards` หรือปรับ owner ใน `decisionFeed` ให้ตรงกับแผนกที่มีอยู่
-  2. เพิ่ม validation ของ mock dataset ก่อน render (เช่น ตรวจว่า owner ทุกตัวมีอยู่ในรายการ department)
-  3. แสดง fallback badge `Unknown Department` หากข้อมูลไม่ครบ เพื่อป้องกัน UI พัง/สับสน
-- **ผลลัพธ์ที่คาดหวัง:** หน้า Dashboard แสดงข้อมูลสอดคล้องกันทุกส่วนและลด data integrity issue
+- **สถานะ:** ปิดงานแล้ว (data integrity) + ปิดงานเพิ่ม (routing robustness)
+- **ผลการตรวจ:**
+  1. ได้เพิ่ม validation ของข้อมูล mock สำหรับ `decision.owner_department` ให้สัมพันธ์กับรายการ department
+  2. ได้แสดง fallback `Unknown Department` เมื่อพบ owner ที่ไม่รู้จัก
+  3. แก้บั๊ก routing ใน `useASIAppState` ให้ fallback เป็น `overview` เมื่อ hash route ไม่ถูกต้อง และรองรับ environment ที่ไม่มี `window`
+- **ผลลัพธ์:** ลดความเสี่ยงข้อมูล mock ไม่สอดคล้อง และลดโอกาส runtime error เมื่อรันใน context ที่ไม่ใช่ browser
 
 ## 3) งานแก้ความคลาดเคลื่อนของคอมเมนต์/เอกสาร (Comment/Documentation Discrepancy)
-- **ปัญหา:** README ระบุว่าแพลตฟอร์มมี `AI Director for every department` แต่ใน prototype ปุ่มของแต่ละแผนกแสดงเป็น `Chat AI` แบบ generic
-- **หลักฐาน:**
-  - README: ระบุ `AI Director for every department`
-  - Prototype: ปุ่มในแต่ละ department card ใช้ label `Chat AI`
-- **งานที่เสนอ:**
-  1. กำหนดศัพท์มาตรฐาน (เช่น `AI Director` vs `Chat AI`) ให้ชัดเจน
-  2. อัปเดต README หรือ UI label ให้ตรงกัน
-  3. เพิ่ม glossary ย่อในเอกสารเพื่อเลี่ยงการใช้คำสลับกัน
-- **ผลลัพธ์ที่คาดหวัง:** เอกสารและ UI ใช้คำเรียกบทบาท AI ตรงกัน ลด misunderstanding ระหว่างทีม
+- **สถานะ:** ปิดงานแล้ว
+- **ผลการตรวจ:** README เดิมระบุว่าข้อมูล mock อยู่ “ภายในคอมโพเนนต์” ซึ่งไม่ตรงกับโค้ดปัจจุบันที่แยกไปอยู่ `prototype/data/mockData.js`
+- **ผลลัพธ์:** ปรับข้อความ README ให้สะท้อนโครงสร้างจริงของโค้ด
 
 ## 4) งานปรับปรุงการทดสอบ (Test Improvement)
-- **ปัญหา:** repository ปัจจุบันยังไม่มี test coverage สำหรับ prototype component
-- **งานที่เสนอ:**
-  1. เพิ่ม unit test ของ `ASIHomepageUIUX` เพื่อตรวจว่า section สำคัญ render ครบ (Navigation, Department Layer, Decision Center, Chat Placement Map)
-  2. เพิ่ม data consistency test สำหรับความสัมพันธ์ `decisionFeed.owner` ↔ `deptCards.name`
-  3. เพิ่ม snapshot test สำหรับโครงสร้างหลักของหน้า เพื่อช่วย detect regression จากการแก้ข้อความ/โครงสร้าง
-- **ผลลัพธ์ที่คาดหวัง:** ลดโอกาส regression ด้าน UI และความไม่สอดคล้องของข้อมูล mock
+- **สถานะ:** ปิดงานแล้ว
+- **ผลการตรวจ:** repository มีทั้ง unit test, snapshot test และ data validation test แล้ว
+- **ผลลัพธ์เพิ่มเติมรอบนี้:** เพิ่ม test ครอบคลุมพฤติกรรม route fallback และการป้องกัน route ที่ไม่อยู่ในรายการ navigation ของ `useASIAppState`

@@ -87,11 +87,11 @@ export default function App() {
 
 - React
 - Tailwind utility classes
-- static mock data ภายในคอมโพเนนต์
+- static mock data ที่แยกเป็น fixtures ภายใต้ `prototype/data/`
 
 ## หมายเหตุสำคัญ
 
-คอมโพเนนต์นี้เป็น prototype UI ไม่ได้เชื่อมต่อ API จริง และใช้ข้อมูลแบบ hardcoded ทั้งหมด เพื่อให้ทีมสามารถ review โครงสร้างหน้า การวางองค์ประกอบ และ interaction model ก่อนลงระบบ production
+คอมโพเนนต์นี้เป็น prototype UI ไม่ได้เชื่อมต่อ API จริง และใช้ข้อมูล mock/hardcoded ทั้งหมดจากไฟล์ fixtures เพื่อให้ทีมสามารถ review โครงสร้างหน้า การวางองค์ประกอบ และ interaction model ก่อนลงระบบ production
 
 ## สิ่งที่ควรต่อยอดจากต้นแบบนี้
 
