@@ -58,7 +58,7 @@ export function toDecisionViewModel(payload) {
     id: payload.decision_id,
     title: payload.summary,
     owner: payload.owner_department,
-    ownerKnown: payload.owner_known,
+    ownerKnown: payload.owner_known ?? true,
     state: payload.status,
     risk: payload.risk_level,
   };
