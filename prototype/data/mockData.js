@@ -6,7 +6,87 @@ import {
 } from '../contracts/apiContracts';
 import { validateMockDataset } from './validateMockData';
 
-export const navItems = ['overview', 'departments', 'decisions', 'governance', 'lineage', 'chat', 'settings'];
+export const navItems = ['overview', 'architecture', 'departments', 'decisions', 'governance', 'lineage', 'chat', 'settings'];
+
+export const architectureLayers = [
+  {
+    layer: 'Human Governance Layer',
+    purpose: 'Strategic oversight, ethical control, and executive accountability.',
+    stack: ['Executive AI Council', 'Audit Committees', 'Intervention Rights'],
+  },
+  {
+    layer: 'Executive Dashboard',
+    purpose: 'Unified observability and control center for AI departments.',
+    stack: ['React', 'Tailwind', 'Vite'],
+  },
+  {
+    layer: 'AI Reasoning Layer (Cogitator X)',
+    purpose: 'Constrained and auditable reasoning with governance envelopes.',
+    stack: ['Reasoning Depth', 'Causal Alignment', 'Ethical Envelope'],
+  },
+  {
+    layer: 'Identity & Lineage Layer (GenesisCore)',
+    purpose: 'Cryptographically verifiable event lineage and immutable accountability.',
+    stack: ['Event Hash', 'Parent Hash', 'Lineage Chain'],
+  },
+  {
+    layer: 'AI Communication Fabric (AetherBus)',
+    purpose: 'High-throughput inter-agent communication with low latency.',
+    stack: ['NATS JetStream', 'uvloop', 'Zero-copy Envelope'],
+  },
+  {
+    layer: 'Data Infrastructure (Triad Database)',
+    purpose: 'Multi-model persistence for transactional, cache, and vector workloads.',
+    stack: ['PostgreSQL', 'Redis', 'Qdrant/Chroma'],
+  },
+  {
+    layer: 'High Performance Compute (Tachyon Core)',
+    purpose: 'Accelerated compute for vector math, hashing, and policy-heavy workloads.',
+    stack: ['Rust', 'PyO3', 'SIMD-friendly runtime'],
+  },
+];
+
+export const governancePrinciples = [
+  {
+    title: 'Verifiable Intelligence',
+    desc: 'ทุกการตัดสินใจต้องมี reasoning path และหลักฐานที่ตรวจสอบย้อนหลังได้',
+  },
+  {
+    title: 'Immutable Lineage',
+    desc: 'ทุก event ถูกผูกด้วย hash chain เพื่อป้องกันการแก้ไขประวัติย้อนหลัง',
+  },
+  {
+    title: 'Autonomous Departments',
+    desc: 'แยก AI ตามขอบเขตหน้าที่ พร้อม policy boundary ที่ชัดเจน',
+  },
+  {
+    title: 'Continuous Alignment',
+    desc: 'ตรวจ drift แบบ realtime พร้อม alert และ shutdown policy',
+  },
+];
+
+export const resonanceDriftPipeline = [
+  {
+    stage: 'Behavior Analyzer',
+    method: 'Rule + embedding telemetry baseline',
+    output: 'Behavior vector and anomaly candidate set',
+  },
+  {
+    stage: 'Statistical Drift Detector',
+    method: 'Bayesian inference + KS test + ADWIN',
+    output: 'Distribution shift confidence score',
+  },
+  {
+    stage: 'Ethical Model Evaluator',
+    method: 'Policy compliance rubric + causal contradiction scans',
+    output: 'Ethical risk band and intervention hint',
+  },
+  {
+    stage: 'Alert / Shutdown Orchestrator',
+    method: 'Human escalation + autonomy band override',
+    output: 'Alert, degraded mode, or emergency stop action',
+  },
+];
 
 export const quickActions = [
   {
