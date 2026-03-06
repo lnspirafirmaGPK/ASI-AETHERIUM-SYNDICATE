@@ -1,9 +1,11 @@
+import { BRAND_NAME } from '../constants/brand';
+
 export function Sidebar({ navItems, activeRoute, onRouteChange }) {
   return (
     <aside className="hidden w-72 flex-col border-r border-white/10 bg-slate-900/80 backdrop-blur-xl lg:flex">
       <div className="border-b border-white/10 px-6 py-6">
         <div className="text-xs uppercase tracking-[0.22em] text-cyan-300">ASI</div>
-        <h1 className="mt-2 text-2xl font-semibold">Aetherium Syndicate Inspectra</h1>
+        <h1 className="mt-2 text-2xl font-semibold">{BRAND_NAME}</h1>
         <p className="mt-2 text-sm text-slate-400">AI Organization OS Dashboard</p>
       </div>
 
