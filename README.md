@@ -11,4 +11,5 @@ CEO AI Council — Manage Policy Genome, view Resonance Score and AI Director fo
 - [ASI Architecture Decision Records (ADR) Decision Log Set v1.0](docs/ASI_ARCHITECTURE_DECISION_RECORDS_DECISION_LOG_SET_V1.md)
 - [ASI ADR Index Matrix (v1.0)](docs/ASI_ADR_INDEX_MATRIX_V1.md)
 - [ASI ADR-to-Implementation Mapping (PMO / Architecture Board Edition)](docs/ASI_ADR_TO_IMPLEMENTATION_MAPPING_V1.md)
+- [ASI Implementation Playbook (Platform / Backend / AI / Security / DevOps)](docs/ASI_IMPLEMENTATION_PLAYBOOK_TEAM_EXECUTION_MODEL_V1.md)
 - Includes production-hardening details for source-code module topology (250–300 modules), database schema strategy (400+ tables + vector index), and complete enterprise system diagram.
