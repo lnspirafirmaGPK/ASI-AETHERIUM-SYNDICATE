@@ -293,6 +293,32 @@ exports[`ASIHomepageUIUX snapshot > matches the overview UI snapshot 1`] = `
                   </span>
                 </div>
               </div>
+              <div
+                class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+              >
+                <div
+                  class="flex items-center justify-between"
+                >
+                  <div>
+                    <div
+                      class="text-lg font-medium"
+                    >
+                      Risk AI
+                    </div>
+                    <div
+                      class="text-sm text-slate-400"
+                    >
+                      Active tasks: 
+                      5
+                    </div>
+                  </div>
+                  <span
+                    class="text-xs text-slate-300"
+                  >
+                    Active
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
           <div
@@ -706,12 +732,7 @@ exports[`ASIHomepageUIUX snapshot > matches the overview UI snapshot 1`] = `
               >
                 <span>
                   Owner: 
-                  Unknown Department
-                </span>
-                <span
-                  class="rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 text-xs text-amber-200"
-                >
-                  Unknown Department
+                  Risk AI
                 </span>
                 <span>
                   · State: 

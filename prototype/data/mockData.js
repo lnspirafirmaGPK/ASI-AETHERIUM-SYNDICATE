@@ -112,6 +112,7 @@ export const departments = [
   { name: 'Legal AI', status: 'Review', tasks: 9, ai: 'Chat AI' },
   { name: 'Strategy AI', status: 'Active', tasks: 18, ai: 'Chat AI' },
   { name: 'Operations AI', status: 'Stable', tasks: 31, ai: 'Chat AI' },
+  { name: 'Risk AI', status: 'Active', tasks: 5, ai: 'Chat AI' },
 ];
 
 const decisionContracts = [
