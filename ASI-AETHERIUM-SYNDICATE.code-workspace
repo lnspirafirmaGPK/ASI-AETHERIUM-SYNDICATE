@@ -10,5 +10,9 @@
 			"path": "../.npm"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"github-actions.workflows.pinned.workflows": [
+			"ASI-AETHERIUM-SYNDICATE/.github/workflows/node.js.yml"
+		]
+	}
 }
