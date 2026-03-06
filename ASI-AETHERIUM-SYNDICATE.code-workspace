@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../.android"
+		},
+		{
+			"path": "../.npm"
+		}
+	],
+	"settings": {}
+}
