@@ -357,10 +357,7 @@ interface SectionAssistantPanelProps {
 - **MVP Recommendation**:
   - ใช้ **React Query/TanStack Query** สำหรับ server state
   - ใช้ **local component state** สำหรับ short-lived UI state
-  - ใช้ lightweight global store เช่น **Zustand** สำหรับ:
-    - global chat open/close
-    - command palette visibility
-    - selected workspace/session UI state
+  - ใช้ **React Hooks** (`useState`, `useCallback`) สำหรับ state management.
 
 ### Suggested Global Store Shape
 
