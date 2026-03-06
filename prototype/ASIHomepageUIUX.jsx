@@ -1,10 +1,13 @@
 import { Sidebar, Header } from './components/layout';
 import {
+  ArchitectureSection,
   ChatSection,
   DecisionsSection,
+  EmotionalIntelligenceSection,
   DepartmentsSection,
   GovernanceSection,
   LineageSection,
+  MAERISection,
   OverviewSection,
   SettingsSection,
 } from './components/sections';
@@ -12,11 +15,16 @@ import {
   chatThreads,
   decisions,
   departments,
+  architectureLayers,
   governancePolicies,
+  governancePrinciples,
   lineageItems,
+  modelSwitchModes,
   navItems,
   quickActions,
+  trustPlaneSignals,
   settingsGroups,
+  interactionPrompts,
 } from './data/mockData';
 import { useASIAppState } from './state/useASIAppState';
 
@@ -40,6 +48,14 @@ export default function ASIHomepageUIUX() {
               <DepartmentsSection departments={departments} chat={chatThreads.department} />
             )}
 
+            {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'architecture') && (
+              <ArchitectureSection
+                layers={architectureLayers}
+                principles={governancePrinciples}
+                driftPipeline={resonanceDriftPipeline}
+              />
+            )}
+
             {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'decisions') && (
               <DecisionsSection
                 decisions={decisions}
@@ -54,6 +70,14 @@ export default function ASIHomepageUIUX() {
 
             {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'lineage') && (
               <LineageSection lineageItems={lineageItems} selectedDecisionId={selectedDecisionId} />
+            )}
+
+            {routeState.activeRoute === 'overview' && (
+              <EmotionalIntelligenceSection trustPlaneSignals={trustPlaneSignals} />
+            )}
+
+            {routeState.activeRoute === 'overview' && (
+              <MAERISection modelSwitchModes={modelSwitchModes} interactionPrompts={interactionPrompts} />
             )}
 
             {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'chat') && (
