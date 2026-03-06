@@ -25,9 +25,7 @@ export function useASIAppState(navItems) {
 
     const onHashChange = () => {
       const route = normalizeHash(window.location.hash);
-      if (navItems.includes(route)) {
-        setActiveRoute(route);
-      }
+      setActiveRoute(navItems.includes(route) ? route : DEFAULT_ROUTE);
     };
 
     window.addEventListener('hashchange', onHashChange);
