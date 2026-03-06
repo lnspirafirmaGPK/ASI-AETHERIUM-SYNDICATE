@@ -116,6 +116,13 @@ export default function App() {
 - เชื่อมกับ event-driven UI states
 - เชื่อมกับ decision artifact views
 
+
+## Architecture Execution Priorities
+
+สำหรับการขับเคลื่อนงาน architecture และ cross-team alignment ล่าสุด ดูเอกสาร:
+
+- `docs/ASI_EXECUTION_PRIORITIES_V1.md`
+
 ## Component Summary
 
 ### Recommended top-level prototype component
