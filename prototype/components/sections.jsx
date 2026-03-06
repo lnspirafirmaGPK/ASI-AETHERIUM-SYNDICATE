@@ -17,6 +17,59 @@ export function OverviewSection({ quickActions }) {
   );
 }
 
+export function ArchitectureSection({ layers, principles, driftPipeline }) {
+  return (
+    <section className="rounded-[28px] border border-cyan-400/30 bg-slate-900/90 p-6">
+      <h3 className="text-2xl font-semibold">ASI Enterprise Architecture</h3>
+      <p className="mt-2 text-sm text-slate-400">
+        Autonomous Enterprise Operating System blueprint with verifiable reasoning, immutable lineage, and
+        continuous alignment.
+      </p>
+
+      <div className="mt-5 grid gap-4 xl:grid-cols-2">
+        <div className="rounded-[24px] border border-white/10 bg-white/5 p-5">
+          <h4 className="text-lg font-medium">Core System Layers (7)</h4>
+          <ol className="mt-3 space-y-3 text-sm text-slate-300">
+            {layers.map((item) => (
+              <li key={item.layer} className="rounded-xl border border-white/10 bg-slate-950/60 p-3">
+                <div className="font-medium text-slate-100">{item.layer}</div>
+                <div className="mt-1 text-slate-400">{item.purpose}</div>
+                <div className="mt-2 text-xs text-cyan-200">{item.stack.join(' · ')}</div>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <div className="space-y-4">
+          <div className="rounded-[24px] border border-white/10 bg-white/5 p-5">
+            <h4 className="text-lg font-medium">Architectural Philosophy</h4>
+            <ul className="mt-3 space-y-2 text-sm text-slate-300">
+              {principles.map((principle) => (
+                <li key={principle.title}>
+                  <span className="font-medium text-slate-100">{principle.title}:</span> {principle.desc}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-[24px] border border-white/10 bg-white/5 p-5">
+            <h4 className="text-lg font-medium">Resonance Drift Pipeline</h4>
+            <ul className="mt-3 space-y-2 text-sm text-slate-300">
+              {driftPipeline.map((stage) => (
+                <li key={stage.stage} className="rounded-xl border border-white/10 bg-slate-950/60 p-3">
+                  <div className="font-medium text-slate-100">{stage.stage}</div>
+                  <div className="text-slate-400">Method: {stage.method}</div>
+                  <div className="text-xs text-cyan-200">Output: {stage.output}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function DepartmentsSection({ departments, chat }) {
   return (
     <section className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
