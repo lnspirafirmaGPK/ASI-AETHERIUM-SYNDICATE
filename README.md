@@ -1,6 +1,6 @@
 # ASI Frontend Prototype Reference
 
-เอกสารนี้เป็นจุดอ้างอิงสำหรับต้นแบบหน้าแดชบอร์ดองค์กรของ **ASI (Aetherium Syndicate Inspectra)** ที่ใช้ AI เป็นแกนกลางของประสบการณ์ใช้งาน
+เอกสารนี้เป็นจุดอ้างอิงสำหรับต้นแบบหน้าแดชบอร์ดองค์กรของ **ASI (Aetherium Syndicate Inspectra)** ที่ใช้ AI เป็นแกนกลางของประสบการณ์ใช้งาน (ใช้ชื่อแบรนด์มาตรฐานว่า **Inspectra** ทั่วทั้งระบบ)
 
 ## New React Prototype
 

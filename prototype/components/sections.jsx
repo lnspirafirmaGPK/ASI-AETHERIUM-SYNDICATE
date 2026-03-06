@@ -1,4 +1,5 @@
 import { apiContracts } from '../contracts/apiContracts';
+import { UNKNOWN_DEPARTMENT_LABEL } from '../data/validateMockData';
 
 export function OverviewSection({ quickActions }) {
   return (
@@ -60,8 +61,14 @@ export function DecisionsSection({ decisions, selectedDecisionId, onSelectDecisi
           >
             <div className="text-sm text-slate-400">{decision.id}</div>
             <div className="text-lg font-medium">{decision.title}</div>
-            <div className="text-sm text-slate-400">
-              Owner: {decision.owner} · State: {decision.state} · Risk: {decision.risk}
+            <div className="flex flex-wrap items-center gap-2 text-sm text-slate-400">
+              <span>Owner: {decision.owner}</span>
+              {decision.ownerKnown === false && (
+                <span className="rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 text-xs text-amber-200">
+                  {UNKNOWN_DEPARTMENT_LABEL}
+                </span>
+              )}
+              <span>· State: {decision.state} · Risk: {decision.risk}</span>
             </div>
           </button>
         ))}

@@ -4,6 +4,7 @@ import {
   toGovernanceViewModel,
   toLineageViewModel,
 } from '../contracts/apiContracts';
+import { validateMockDataset } from './validateMockData';
 
 export const navItems = ['overview', 'departments', 'decisions', 'governance', 'lineage', 'chat', 'settings'];
 
@@ -110,7 +111,13 @@ const chatContracts = {
   },
 };
 
-export const decisions = decisionContracts.map(toDecisionViewModel);
+const decisionValidation = validateMockDataset(departments, decisionContracts);
+
+if (decisionValidation.issues.length > 0 && typeof console !== 'undefined' && typeof console.warn === 'function') {
+  console.warn('[mockData] Found dataset issues', decisionValidation.issues);
+}
+
+export const decisions = decisionValidation.normalizedDecisionContracts.map(toDecisionViewModel);
 export const governancePolicies = governanceContracts.map(toGovernanceViewModel);
 export const lineageItems = lineageContracts.map(toLineageViewModel);
 export const chatThreads = {

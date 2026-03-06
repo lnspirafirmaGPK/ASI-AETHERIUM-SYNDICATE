@@ -5,6 +5,7 @@
  * @property {string} decision_id
  * @property {string} summary
  * @property {string} owner_department
+ * @property {boolean} [owner_known]
  * @property {string} status
  * @property {RiskLevel} risk_level
  */
@@ -57,6 +58,7 @@ export function toDecisionViewModel(payload) {
     id: payload.decision_id,
     title: payload.summary,
     owner: payload.owner_department,
+    ownerKnown: payload.owner_known ?? true,
     state: payload.status,
     risk: payload.risk_level,
   };
