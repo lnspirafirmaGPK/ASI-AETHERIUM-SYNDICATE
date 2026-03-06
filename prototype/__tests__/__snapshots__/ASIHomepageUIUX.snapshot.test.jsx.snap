@@ -1,0 +1,1063 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ASIHomepageUIUX snapshot > matches the overview UI snapshot 1`] = `
+<div
+  class="min-h-screen bg-slate-950 text-slate-100"
+>
+  <div
+    class="flex min-h-screen"
+  >
+    <aside
+      class="hidden w-72 flex-col border-r border-white/10 bg-slate-900/80 backdrop-blur-xl lg:flex"
+    >
+      <div
+        class="border-b border-white/10 px-6 py-6"
+      >
+        <div
+          class="text-xs uppercase tracking-[0.22em] text-cyan-300"
+        >
+          ASI
+        </div>
+        <h1
+          class="mt-2 text-2xl font-semibold"
+        >
+          Aetherium Syndicate Inspectra
+        </h1>
+        <p
+          class="mt-2 text-sm text-slate-400"
+        >
+          AI Organization OS Dashboard
+        </p>
+      </div>
+      <nav
+        class="space-y-2 px-4 py-5"
+      >
+        <button
+          class="w-full rounded-2xl px-4 py-3 text-left text-sm transition bg-white/10 text-white"
+        >
+          overview
+        </button>
+        <button
+          class="w-full rounded-2xl px-4 py-3 text-left text-sm transition text-slate-300 hover:bg-white/5 hover:text-white"
+        >
+          architecture
+        </button>
+        <button
+          class="w-full rounded-2xl px-4 py-3 text-left text-sm transition text-slate-300 hover:bg-white/5 hover:text-white"
+        >
+          departments
+        </button>
+        <button
+          class="w-full rounded-2xl px-4 py-3 text-left text-sm transition text-slate-300 hover:bg-white/5 hover:text-white"
+        >
+          decisions
+        </button>
+        <button
+          class="w-full rounded-2xl px-4 py-3 text-left text-sm transition text-slate-300 hover:bg-white/5 hover:text-white"
+        >
+          governance
+        </button>
+        <button
+          class="w-full rounded-2xl px-4 py-3 text-left text-sm transition text-slate-300 hover:bg-white/5 hover:text-white"
+        >
+          lineage
+        </button>
+        <button
+          class="w-full rounded-2xl px-4 py-3 text-left text-sm transition text-slate-300 hover:bg-white/5 hover:text-white"
+        >
+          chat
+        </button>
+        <button
+          class="w-full rounded-2xl px-4 py-3 text-left text-sm transition text-slate-300 hover:bg-white/5 hover:text-white"
+        >
+          settings
+        </button>
+      </nav>
+    </aside>
+    <main
+      class="flex-1"
+    >
+      <header
+        class="sticky top-0 z-20 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl"
+      >
+        <div
+          class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 lg:px-8"
+        >
+          <div>
+            <div
+              class="text-xs uppercase tracking-[0.22em] text-slate-400"
+            >
+              Executive Control Layer
+            </div>
+            <div
+              class="text-xl font-semibold"
+            >
+              Homepage / 
+              overview
+            </div>
+          </div>
+          <button
+            class="rounded-2xl bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:opacity-90"
+          >
+            New Workflow
+          </button>
+        </div>
+      </header>
+      <div
+        class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 lg:px-8 lg:py-8"
+      >
+        <section
+          class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+        >
+          <h3
+            class="text-2xl font-semibold"
+          >
+            Quick Actions
+          </h3>
+          <div
+            class="mt-5 grid gap-4 md:grid-cols-2"
+          >
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                เริ่มคำขอใหม่
+              </div>
+              <p
+                class="mt-2 text-sm text-slate-400"
+              >
+                สร้าง workflow ใหม่ เช่น Budget Reallocation, Risk Review, Policy Override
+              </p>
+            </div>
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                ดูการตัดสินใจที่รออนุมัติ
+              </div>
+              <p
+                class="mt-2 text-sm text-slate-400"
+              >
+                รายการที่ต้องการ Executive Oversight หรือการ approve จากผู้มีอำนาจ
+              </p>
+            </div>
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                ตรวจสอบ Drift / Alert
+              </div>
+              <p
+                class="mt-2 text-sm text-slate-400"
+              >
+                ดูสัญญาณ risk, policy drift, และ intervention ที่กำลังทำงาน
+              </p>
+            </div>
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                เปิด Audit & Lineage
+              </div>
+              <p
+                class="mt-2 text-sm text-slate-400"
+              >
+                เรียกดู decision trail, proof, event chain และ replay
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]"
+        >
+          <div
+            class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+          >
+            <h3
+              class="text-2xl font-semibold"
+            >
+              AI Departments
+            </h3>
+            <div
+              class="mt-5 grid gap-4 md:grid-cols-2"
+            >
+              <div
+                class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+              >
+                <div
+                  class="flex items-center justify-between"
+                >
+                  <div>
+                    <div
+                      class="text-lg font-medium"
+                    >
+                      Finance AI
+                    </div>
+                    <div
+                      class="text-sm text-slate-400"
+                    >
+                      Active tasks: 
+                      24
+                    </div>
+                  </div>
+                  <span
+                    class="text-xs text-slate-300"
+                  >
+                    Stable
+                  </span>
+                </div>
+              </div>
+              <div
+                class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+              >
+                <div
+                  class="flex items-center justify-between"
+                >
+                  <div>
+                    <div
+                      class="text-lg font-medium"
+                    >
+                      Legal AI
+                    </div>
+                    <div
+                      class="text-sm text-slate-400"
+                    >
+                      Active tasks: 
+                      9
+                    </div>
+                  </div>
+                  <span
+                    class="text-xs text-slate-300"
+                  >
+                    Review
+                  </span>
+                </div>
+              </div>
+              <div
+                class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+              >
+                <div
+                  class="flex items-center justify-between"
+                >
+                  <div>
+                    <div
+                      class="text-lg font-medium"
+                    >
+                      Strategy AI
+                    </div>
+                    <div
+                      class="text-sm text-slate-400"
+                    >
+                      Active tasks: 
+                      18
+                    </div>
+                  </div>
+                  <span
+                    class="text-xs text-slate-300"
+                  >
+                    Active
+                  </span>
+                </div>
+              </div>
+              <div
+                class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+              >
+                <div
+                  class="flex items-center justify-between"
+                >
+                  <div>
+                    <div
+                      class="text-lg font-medium"
+                    >
+                      Operations AI
+                    </div>
+                    <div
+                      class="text-sm text-slate-400"
+                    >
+                      Active tasks: 
+                      31
+                    </div>
+                  </div>
+                  <span
+                    class="text-xs text-slate-300"
+                  >
+                    Stable
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+          >
+            <div
+              class="text-xl font-semibold"
+            >
+              Department Assistant
+            </div>
+            <div
+              class="mt-4 space-y-3 rounded-[24px] border border-white/10 bg-slate-950/70 p-4"
+            >
+              <div
+                class="max-w-[92%] rounded-2xl px-4 py-3 text-sm border border-white/10 bg-white/5 text-slate-200"
+              >
+                Finance AI ตอนนี้มี 2 รายการที่เกิน threshold และ 1 รายการที่ต้อง CFO review
+              </div>
+              <div
+                class="max-w-[92%] rounded-2xl px-4 py-3 text-sm ml-auto bg-cyan-400 text-slate-950"
+              >
+                เปิดรายการที่ต้อง CFO review ให้หน่อย
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="rounded-[28px] border border-cyan-400/30 bg-slate-900/90 p-6"
+        >
+          <h3
+            class="text-2xl font-semibold"
+          >
+            ASI Enterprise Architecture
+          </h3>
+          <p
+            class="mt-2 text-sm text-slate-400"
+          >
+            Autonomous Enterprise Operating System blueprint with verifiable reasoning, immutable lineage, and continuous alignment.
+          </p>
+          <div
+            class="mt-5 grid gap-4 xl:grid-cols-2"
+          >
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <h4
+                class="text-lg font-medium"
+              >
+                Core System Layers (7)
+              </h4>
+              <ol
+                class="mt-3 space-y-3 text-sm text-slate-300"
+              >
+                <li
+                  class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                >
+                  <div
+                    class="font-medium text-slate-100"
+                  >
+                    Human Governance Layer
+                  </div>
+                  <div
+                    class="mt-1 text-slate-400"
+                  >
+                    Strategic oversight, ethical control, and executive accountability.
+                  </div>
+                  <div
+                    class="mt-2 text-xs text-cyan-200"
+                  >
+                    Executive AI Council · Audit Committees · Intervention Rights
+                  </div>
+                </li>
+                <li
+                  class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                >
+                  <div
+                    class="font-medium text-slate-100"
+                  >
+                    Executive Dashboard
+                  </div>
+                  <div
+                    class="mt-1 text-slate-400"
+                  >
+                    Unified observability and control center for AI departments.
+                  </div>
+                  <div
+                    class="mt-2 text-xs text-cyan-200"
+                  >
+                    React · Tailwind · Vite
+                  </div>
+                </li>
+                <li
+                  class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                >
+                  <div
+                    class="font-medium text-slate-100"
+                  >
+                    AI Reasoning Layer (Cogitator X)
+                  </div>
+                  <div
+                    class="mt-1 text-slate-400"
+                  >
+                    Constrained and auditable reasoning with governance envelopes.
+                  </div>
+                  <div
+                    class="mt-2 text-xs text-cyan-200"
+                  >
+                    Reasoning Depth · Causal Alignment · Ethical Envelope
+                  </div>
+                </li>
+                <li
+                  class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                >
+                  <div
+                    class="font-medium text-slate-100"
+                  >
+                    Identity & Lineage Layer (GenesisCore)
+                  </div>
+                  <div
+                    class="mt-1 text-slate-400"
+                  >
+                    Cryptographically verifiable event lineage and immutable accountability.
+                  </div>
+                  <div
+                    class="mt-2 text-xs text-cyan-200"
+                  >
+                    Event Hash · Parent Hash · Lineage Chain
+                  </div>
+                </li>
+                <li
+                  class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                >
+                  <div
+                    class="font-medium text-slate-100"
+                  >
+                    AI Communication Fabric (AetherBus)
+                  </div>
+                  <div
+                    class="mt-1 text-slate-400"
+                  >
+                    High-throughput inter-agent communication with low latency.
+                  </div>
+                  <div
+                    class="mt-2 text-xs text-cyan-200"
+                  >
+                    NATS JetStream · uvloop · Zero-copy Envelope
+                  </div>
+                </li>
+                <li
+                  class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                >
+                  <div
+                    class="font-medium text-slate-100"
+                  >
+                    Data Infrastructure (Triad Database)
+                  </div>
+                  <div
+                    class="mt-1 text-slate-400"
+                  >
+                    Multi-model persistence for transactional, cache, and vector workloads.
+                  </div>
+                  <div
+                    class="mt-2 text-xs text-cyan-200"
+                  >
+                    PostgreSQL · Redis · Qdrant/Chroma
+                  </div>
+                </li>
+                <li
+                  class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                >
+                  <div
+                    class="font-medium text-slate-100"
+                  >
+                    High Performance Compute (Tachyon Core)
+                  </div>
+                  <div
+                    class="mt-1 text-slate-400"
+                  >
+                    Accelerated compute for vector math, hashing, and policy-heavy workloads.
+                  </div>
+                  <div
+                    class="mt-2 text-xs text-cyan-200"
+                  >
+                    Rust · PyO3 · SIMD-friendly runtime
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div
+              class="space-y-4"
+            >
+              <div
+                class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+              >
+                <h4
+                  class="text-lg font-medium"
+                >
+                  Architectural Philosophy
+                </h4>
+                <ul
+                  class="mt-3 space-y-2 text-sm text-slate-300"
+                >
+                  <li>
+                    <span
+                      class="font-medium text-slate-100"
+                    >
+                      Verifiable Intelligence
+                      :
+                    </span>
+                     
+                    ทุกการตัดสินใจต้องมี reasoning path และหลักฐานที่ตรวจสอบย้อนหลังได้
+                  </li>
+                  <li>
+                    <span
+                      class="font-medium text-slate-100"
+                    >
+                      Immutable Lineage
+                      :
+                    </span>
+                     
+                    ทุก event ถูกผูกด้วย hash chain เพื่อป้องกันการแก้ไขประวัติย้อนหลัง
+                  </li>
+                  <li>
+                    <span
+                      class="font-medium text-slate-100"
+                    >
+                      Autonomous Departments
+                      :
+                    </span>
+                     
+                    แยก AI ตามขอบเขตหน้าที่ พร้อม policy boundary ที่ชัดเจน
+                  </li>
+                  <li>
+                    <span
+                      class="font-medium text-slate-100"
+                    >
+                      Continuous Alignment
+                      :
+                    </span>
+                     
+                    ตรวจ drift แบบ realtime พร้อม alert และ shutdown policy
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+              >
+                <h4
+                  class="text-lg font-medium"
+                >
+                  Resonance Drift Pipeline
+                </h4>
+                <ul
+                  class="mt-3 space-y-2 text-sm text-slate-300"
+                >
+                  <li
+                    class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                  >
+                    <div
+                      class="font-medium text-slate-100"
+                    >
+                      Behavior Analyzer
+                    </div>
+                    <div
+                      class="text-slate-400"
+                    >
+                      Method: 
+                      Rule + embedding telemetry baseline
+                    </div>
+                    <div
+                      class="text-xs text-cyan-200"
+                    >
+                      Output: 
+                      Behavior vector and anomaly candidate set
+                    </div>
+                  </li>
+                  <li
+                    class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                  >
+                    <div
+                      class="font-medium text-slate-100"
+                    >
+                      Statistical Drift Detector
+                    </div>
+                    <div
+                      class="text-slate-400"
+                    >
+                      Method: 
+                      Bayesian inference + KS test + ADWIN
+                    </div>
+                    <div
+                      class="text-xs text-cyan-200"
+                    >
+                      Output: 
+                      Distribution shift confidence score
+                    </div>
+                  </li>
+                  <li
+                    class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                  >
+                    <div
+                      class="font-medium text-slate-100"
+                    >
+                      Ethical Model Evaluator
+                    </div>
+                    <div
+                      class="text-slate-400"
+                    >
+                      Method: 
+                      Policy compliance rubric + causal contradiction scans
+                    </div>
+                    <div
+                      class="text-xs text-cyan-200"
+                    >
+                      Output: 
+                      Ethical risk band and intervention hint
+                    </div>
+                  </li>
+                  <li
+                    class="rounded-xl border border-white/10 bg-slate-950/60 p-3"
+                  >
+                    <div
+                      class="font-medium text-slate-100"
+                    >
+                      Alert / Shutdown Orchestrator
+                    </div>
+                    <div
+                      class="text-slate-400"
+                    >
+                      Method: 
+                      Human escalation + autonomy band override
+                    </div>
+                    <div
+                      class="text-xs text-cyan-200"
+                    >
+                      Output: 
+                      Alert, degraded mode, or emergency stop action
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <h3
+              class="text-2xl font-semibold"
+            >
+              Pending & Recent Decisions
+            </h3>
+            <div
+              class="text-xs text-slate-400"
+            >
+              API: 
+              GET
+               
+              /api/decisions
+            </div>
+          </div>
+          <div
+            class="mt-5 space-y-4"
+          >
+            <button
+              class="w-full rounded-[24px] border p-5 text-left border-cyan-400/40 bg-cyan-400/10"
+            >
+              <div
+                class="text-sm text-slate-400"
+              >
+                DEC-1042
+              </div>
+              <div
+                class="text-lg font-medium"
+              >
+                Budget Reallocation
+              </div>
+              <div
+                class="flex flex-wrap items-center gap-2 text-sm text-slate-400"
+              >
+                <span>
+                  Owner: 
+                  Finance AI
+                </span>
+                <span>
+                  · State: 
+                  Awaiting CFO Approval
+                   · Risk: 
+                  medium
+                </span>
+              </div>
+            </button>
+            <button
+              class="w-full rounded-[24px] border p-5 text-left border-white/10 bg-white/5"
+            >
+              <div
+                class="text-sm text-slate-400"
+              >
+                DEC-1041
+              </div>
+              <div
+                class="text-lg font-medium"
+              >
+                Vendor Risk Flag
+              </div>
+              <div
+                class="flex flex-wrap items-center gap-2 text-sm text-slate-400"
+              >
+                <span>
+                  Owner: 
+                  Unknown Department
+                </span>
+                <span
+                  class="rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 text-xs text-amber-200"
+                >
+                  Unknown Department
+                </span>
+                <span>
+                  · State: 
+                  Escalated
+                   · Risk: 
+                  high
+                </span>
+              </div>
+            </button>
+            <button
+              class="w-full rounded-[24px] border p-5 text-left border-white/10 bg-white/5"
+            >
+              <div
+                class="text-sm text-slate-400"
+              >
+                DEC-1038
+              </div>
+              <div
+                class="text-lg font-medium"
+              >
+                Ops Schedule Adjustment
+              </div>
+              <div
+                class="flex flex-wrap items-center gap-2 text-sm text-slate-400"
+              >
+                <span>
+                  Owner: 
+                  Operations AI
+                </span>
+                <span>
+                  · State: 
+                  Approved
+                   · Risk: 
+                  low
+                </span>
+              </div>
+            </button>
+          </div>
+        </section>
+        <section
+          class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <h3
+              class="text-2xl font-semibold"
+            >
+              Governance Policies
+            </h3>
+            <div
+              class="text-xs text-slate-400"
+            >
+              API: 
+              GET
+               
+              /api/governance/policies
+            </div>
+          </div>
+          <div
+            class="mt-5 grid gap-4 md:grid-cols-2"
+          >
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                Budget Delta Threshold
+              </div>
+              <div
+                class="text-xs uppercase text-slate-400"
+              >
+                active
+              </div>
+              <ul
+                class="mt-2 space-y-1 text-sm text-slate-300"
+              >
+                <li>
+                  • 
+                  cfo_approval_over_5_percent
+                </li>
+                <li>
+                  • 
+                  risk_review_required
+                </li>
+              </ul>
+            </div>
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                Vendor Tier Escalation
+              </div>
+              <div
+                class="text-xs uppercase text-slate-400"
+              >
+                active
+              </div>
+              <ul
+                class="mt-2 space-y-1 text-sm text-slate-300"
+              >
+                <li>
+                  • 
+                  tier_1_auto_escalation
+                </li>
+                <li>
+                  • 
+                  legal_review_gate
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section
+          class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <h3
+              class="text-2xl font-semibold"
+            >
+              Lineage & Audit
+            </h3>
+            <div
+              class="text-xs text-slate-400"
+            >
+              API: 
+              GET
+               
+              /api/lineage/events
+            </div>
+          </div>
+          <div
+            class="mt-4 text-sm text-slate-300"
+          >
+            Decision: 
+            DEC-1042
+          </div>
+          <ul
+            class="mt-4 rounded-[20px] border border-white/10 bg-white/5 p-4 text-sm text-slate-300"
+          >
+            <li>
+              • 
+              request.created
+            </li>
+            <li>
+              • 
+              policy.checked
+            </li>
+            <li>
+              • 
+              risk.scored
+            </li>
+            <li>
+              • 
+              approval.pending
+            </li>
+          </ul>
+          <div
+            class="mt-3 text-xs text-slate-400"
+          >
+            proof_uri: 
+            /proof/dec-1042
+             · replay_job: 
+            replay-2026-03-01-dec-1042
+          </div>
+        </section>
+        <section
+          class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+        >
+          <div
+            class="flex items-center justify-between"
+          >
+            <h3
+              class="text-2xl font-semibold"
+            >
+              Universal Assistant
+            </h3>
+            <div
+              class="text-xs text-slate-400"
+            >
+              API: 
+              POST
+               
+              /api/chat/query
+            </div>
+          </div>
+          <div
+            class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+          >
+            <div
+              class="text-xl font-semibold"
+            >
+              Global Chat
+            </div>
+            <div
+              class="mt-4 space-y-3 rounded-[24px] border border-white/10 bg-slate-950/70 p-4"
+            >
+              <div
+                class="max-w-[92%] rounded-2xl px-4 py-3 text-sm ml-auto bg-cyan-400 text-slate-950"
+              >
+                วันนี้มี decision ใดบ้างที่รออนุมัติระดับผู้บริหาร?
+              </div>
+              <div
+                class="max-w-[92%] rounded-2xl px-4 py-3 text-sm border border-white/10 bg-white/5 text-slate-200"
+              >
+                พบ 3 รายการ: Budget Reallocation, Vendor Risk Flag และ Policy Override Request สามารถเปิดรายการใน Decision Center ได้ทันที
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="rounded-[28px] border border-white/10 bg-slate-900/80 p-6"
+        >
+          <h3
+            class="text-2xl font-semibold"
+          >
+            System Configuration
+          </h3>
+          <div
+            class="mt-5 grid gap-4 sm:grid-cols-2"
+          >
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                Workspace Settings
+              </div>
+              <ul
+                class="mt-3 space-y-2 text-sm text-slate-400"
+              >
+                <li>
+                  • 
+                  Brand / Theme
+                </li>
+                <li>
+                  • 
+                  Language
+                </li>
+                <li>
+                  • 
+                  Time Zone
+                </li>
+                <li>
+                  • 
+                  Notification Rules
+                </li>
+              </ul>
+            </div>
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                AI Governance Settings
+              </div>
+              <ul
+                class="mt-3 space-y-2 text-sm text-slate-400"
+              >
+                <li>
+                  • 
+                  Approval Thresholds
+                </li>
+                <li>
+                  • 
+                  Autonomy Bands
+                </li>
+                <li>
+                  • 
+                  Policy Scope
+                </li>
+                <li>
+                  • 
+                  Human Escalation Rules
+                </li>
+              </ul>
+            </div>
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                Security & Access
+              </div>
+              <ul
+                class="mt-3 space-y-2 text-sm text-slate-400"
+              >
+                <li>
+                  • 
+                  SSO / Identity
+                </li>
+                <li>
+                  • 
+                  Role Permissions
+                </li>
+                <li>
+                  • 
+                  Session Controls
+                </li>
+                <li>
+                  • 
+                  Audit Access
+                </li>
+              </ul>
+            </div>
+            <div
+              class="rounded-[24px] border border-white/10 bg-white/5 p-5"
+            >
+              <div
+                class="text-base font-medium"
+              >
+                AI Chat Controls
+              </div>
+              <ul
+                class="mt-3 space-y-2 text-sm text-slate-400"
+              >
+                <li>
+                  • 
+                  Default Assistant Persona
+                </li>
+                <li>
+                  • 
+                  Sidebar Chat
+                </li>
+                <li>
+                  • 
+                  Inline Section Chat
+                </li>
+                <li>
+                  • 
+                  Pinned Command Shortcuts
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</div>
+`;
