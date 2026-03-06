@@ -224,3 +224,44 @@ export const settingsGroups = [
     items: ['Default Assistant Persona', 'Sidebar Chat', 'Inline Section Chat', 'Pinned Command Shortcuts'],
   },
 ];
+
+export const trustPlaneSignals = [
+  {
+    decisionId: 'DEC-1042',
+    riskScore: 0.78,
+    emotionalState: 'Concerned',
+    manifestationTone: 'Amber / Focused',
+    guidance: 'ควรยืนยันผลกระทบเชิงการเงินกับ CFO ก่อนอนุมัติการโยกงบประมาณ',
+  },
+  {
+    decisionId: 'DEC-1041',
+    riskScore: 0.91,
+    emotionalState: 'Protective',
+    manifestationTone: 'Crimson / Guarded',
+    guidance: 'ต้องทำ legal review และ vendor escalation แบบทันที',
+  },
+  {
+    decisionId: 'DEC-1038',
+    riskScore: 0.24,
+    emotionalState: 'Confident',
+    manifestationTone: 'Cyan / Calm',
+    guidance: 'สามารถเดินหน้าตามแผนเดิมและติดตามผลลัพธ์หลัง deploy',
+  },
+];
+
+export const modelSwitchModes = [
+  {
+    mode: 'Logic-Heavy',
+    profile: 'ใช้สถิติและ policy guardrails เป็นแกนหลัก',
+  },
+  {
+    mode: 'Intuition-Sync',
+    profile: 'ผสานสัญชาตญาณผู้บริหารเข้ากับ world model เพื่อค้นหาทางเลือกใหม่',
+  },
+];
+
+export const interactionPrompts = [
+  'ลากเส้นแสงเพื่อระบุพื้นที่ที่ต้องการให้ AI วิเคราะห์เพิ่ม',
+  'เขียนข้อความสั้นเพื่อ sync เหตุผลเชิงสัญชาตญาณของคุณกับระบบ',
+  'สลับโหมด Model Switch เพื่อดูผลลัพธ์แบบ logic หรือ intuition',
+];
