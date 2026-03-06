@@ -1,5 +1,6 @@
 import { Sidebar, Header } from './components/layout';
 import {
+  ArchitectureSection,
   ChatSection,
   DecisionsSection,
   EmotionalIntelligenceSection,
@@ -14,7 +15,9 @@ import {
   chatThreads,
   decisions,
   departments,
+  architectureLayers,
   governancePolicies,
+  governancePrinciples,
   lineageItems,
   modelSwitchModes,
   navItems,
@@ -43,6 +46,14 @@ export default function ASIHomepageUIUX() {
 
             {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'departments') && (
               <DepartmentsSection departments={departments} chat={chatThreads.department} />
+            )}
+
+            {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'architecture') && (
+              <ArchitectureSection
+                layers={architectureLayers}
+                principles={governancePrinciples}
+                driftPipeline={resonanceDriftPipeline}
+              />
             )}
 
             {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'decisions') && (
