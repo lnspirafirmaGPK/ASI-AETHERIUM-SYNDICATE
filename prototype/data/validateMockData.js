@@ -1,8 +1,10 @@
 export const UNKNOWN_DEPARTMENT_LABEL = 'Unknown Department';
 
 /**
- * @param {{ name: string }[]} departments
- * @param {{ decision_id: string, owner_department: string }[]} decisionContracts
+ * Validates the mock dataset by checking for inconsistencies between departments and decision contracts.
+ * @param {{ name: string }[]} departments - The list of department objects.
+ * @param {import('../contracts/apiContracts').DecisionContract[]} decisionContracts - The list of decision contract objects.
+ * @returns {{issues: {type: string, decisionId: string, ownerDepartment: string}[], normalizedDecisionContracts: import('../contracts/apiContracts').DecisionContract[]}} - An object containing a list of issues and the normalized decision contracts.
  */
 export function validateMockDataset(departments, decisionContracts) {
   const knownDepartments = new Set(departments.map((department) => department.name));
