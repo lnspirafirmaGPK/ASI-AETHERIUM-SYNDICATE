@@ -2,9 +2,11 @@ import { Sidebar, Header } from './components/layout';
 import {
   ChatSection,
   DecisionsSection,
+  EmotionalIntelligenceSection,
   DepartmentsSection,
   GovernanceSection,
   LineageSection,
+  MAERISection,
   OverviewSection,
   SettingsSection,
 } from './components/sections';
@@ -14,9 +16,12 @@ import {
   departments,
   governancePolicies,
   lineageItems,
+  modelSwitchModes,
   navItems,
   quickActions,
+  trustPlaneSignals,
   settingsGroups,
+  interactionPrompts,
 } from './data/mockData';
 import { useASIAppState } from './state/useASIAppState';
 
@@ -54,6 +59,14 @@ export default function ASIHomepageUIUX() {
 
             {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'lineage') && (
               <LineageSection lineageItems={lineageItems} selectedDecisionId={selectedDecisionId} />
+            )}
+
+            {routeState.activeRoute === 'overview' && (
+              <EmotionalIntelligenceSection trustPlaneSignals={trustPlaneSignals} />
+            )}
+
+            {routeState.activeRoute === 'overview' && (
+              <MAERISection modelSwitchModes={modelSwitchModes} interactionPrompts={interactionPrompts} />
             )}
 
             {(routeState.activeRoute === 'overview' || routeState.activeRoute === 'chat') && (
